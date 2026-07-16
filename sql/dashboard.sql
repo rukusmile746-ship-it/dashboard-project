@@ -16,7 +16,7 @@ CREATE TABLE users (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 CREATE TABLE finances(
-    id INT AUTO_INCREMENT PRIMATY KEY,
+    id INT AUTO_INCREMENT PRIMARY KEY,
     user_id INT NOT NULL,
     type ENUM ('gain', 'perte') NOT NULL,
     montant DECIMAL(10, 2) NOT NULL,
